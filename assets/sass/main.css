@@ -510,7 +510,7 @@ body {
       grid-template-rows: auto;
 }
 
-.ueber-mich .headline-text {
+.ueber-mich .headline-text1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
