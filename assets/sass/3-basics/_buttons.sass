@@ -3,15 +3,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]
-    display: inline-block
+    display: inline
     text-align: center
     text-transform: uppercase
     text-decoration: none
+    border: 1px solid black
     border-radius: 4px
     cursor: pointer
+    padding: 1.5rem 3rem
+    @include transition15
 
     &:hover,
     &:active,
     &:focus,
+    &:hover a,
         outline: 0
-        transform: translateY(3px)
+        transform: scale(1.05)
+        color: $secondary
+        @include transition15
