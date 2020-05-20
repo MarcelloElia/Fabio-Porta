@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Sintony:wght@700&display=swap");
 html {
   line-height: 1.15;
   font-size: 1px;
@@ -332,7 +333,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, hr {
   margin: 0;
   padding: 0;
   border: 0;
@@ -372,10 +373,6 @@ html {
   background: white;
 }
 
-body {
-  background-color: red;
-}
-
 main {
   display: -ms-grid;
   display: grid;
@@ -390,16 +387,44 @@ main {
           box-sizing: inherit;
 }
 
+section:nth-of-type(even) {
+  margin: 1rem 0px;
+}
+
+section:first-child {
+  margin-top: -1rem;
+}
+
+section:last-child {
+  margin-bottom: 0rem;
+}
+
 .c-t {
   text-align: center;
 }
 
-.a-c {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+hr.hr-top {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 8;
+  grid-area: 3 / 5 / 4 / 13;
+  border: 2px solid pink;
+  z-index: 99;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+hr.hr-bottom {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 8;
+  grid-area: 4 / 5 / 5 / 13;
+  border: 2px solid pink;
+  z-index: 99;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .button,
@@ -519,7 +544,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1 / 1 / 5 / 2;
-  background-color: turquoise;
+  background-color: teal;
 }
 
 .hero-image-main {
@@ -560,7 +585,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: 25vh;
-  background-color: grey;
+  background-color: pink;
 }
 
 footer .footer-nav {
@@ -600,7 +625,7 @@ footer .footer-lower {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 3 / 1 / 4 / 3;
-  background-color: yellow;
+  background-color: orange;
 }
 
 .service {
@@ -618,47 +643,47 @@ footer .footer-lower {
 
 .ueber-mich {
   height: 20vh;
-  background-color: pink;
+  background-color: orange;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 12;
-  grid-area: 3 / 3 / 4 / 15;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 16;
+  grid-area: 3 / 1 / 4 / 17;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
 
 .ueber-mich .headline-text1 {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: 1 / 1 / 1 / 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-area: 1 / 3 / 1 / 8;
   max-width: 100%;
 }
 
 .ueber-mich .c1 {
   -ms-grid-row: 1;
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 6 / 1 / 7;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 9 / 1 / 11;
 }
 
 .ueber-mich .c2 {
   -ms-grid-row: 1;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 7 / 1 / 8;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 11 / 1 / 13;
 }
 
 .ueber-mich .c3 {
   -ms-grid-row: 1;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 8 / 1 / 9;
+  -ms-grid-column: 13;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 13 / 1 / 15;
 }
 
 .cta {
@@ -706,7 +731,7 @@ footer .footer-lower {
 
 .picture-text-module p {
   padding: 1.5rem 4rem;
-  background-color: grey;
+  background-color: teal;
   place-self: center center;
 }
 
@@ -749,6 +774,5 @@ footer .footer-lower {
 
 .counter {
   position: relative;
-  background-color: yellow;
 }
 /*# sourceMappingURL=main.css.map */

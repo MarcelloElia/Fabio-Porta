@@ -2,9 +2,6 @@ html
     box-sizing: border-box
     background: white
 
-body
-    background-color: red
-
 main
     display: grid
     grid-template-rows: repeat(autofill, 1fr)
@@ -13,11 +10,26 @@ main
 * *:before *:after
     box-sizing: inherit
 
+section:nth-of-type(even)
+    margin: 1rem 0px
+
+section:first-child
+    margin-top: -1rem
+
+section:last-child
+    margin-bottom: 0rem
+
 .c-t 
     text-align: center
 
-.a-c
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
+hr.hr-top
+    grid-area: 3 / 5 / 4 / 13
+    border: 2px solid $tertiary
+    z-index: 99
+    transform: translateY(-2px)
+
+hr.hr-bottom
+    grid-area: 4 / 5 / 5 / 13
+    border: 2px solid $tertiary
+    z-index: 99
+    transform: translateY(-2px)
