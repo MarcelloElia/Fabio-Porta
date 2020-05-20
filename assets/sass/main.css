@@ -475,7 +475,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #FCFDFF;
+  color: #fafcff;
 }
 
 a:link, a:visited {
@@ -599,8 +599,8 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 8vh 20vh 2vh;
-      grid-template-rows: 8vh 20vh 2vh;
+  -ms-grid-rows: 8vh 19.5vh 2.5vh;
+      grid-template-rows: 8vh 19.5vh 2.5vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -644,6 +644,20 @@ footer .footer-lower {
   grid-area: 3 / 1 / 4 / 3;
   background-color: #63ACE5;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-lower a {
+  color: black;
+  font-weight: 500;
 }
 
 .service {
@@ -660,7 +674,7 @@ footer .footer-lower {
 
 .ueber-mich {
   height: 25vh;
-  background-color: #FCFDFF;
+  background-color: #fafcff;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
