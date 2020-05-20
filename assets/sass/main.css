@@ -498,6 +498,57 @@ body {
   -webkit-tap-highlight-color: #727272;
 }
 
+.hero-main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 16;
+  grid-area: 1 / 1 / 2 / 17;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+}
+
+.color-block {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 5 / 2;
+  background-color: turquoise;
+}
+
+.hero-image-main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 2 / 5 / 4;
+}
+
+.hero-image-main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text-main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 2 / 3 / 4;
+  color: white;
+  font-size: 3rem;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
 footer {
   display: -ms-grid;
   display: grid;
@@ -553,11 +604,11 @@ footer .footer-lower {
 }
 
 .service {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
   -ms-grid-column-span: 10;
-  grid-area: 1 / 4 / 2 / 14;
+  grid-area: 2 / 4 / 3 / 14;
   background-color: blue;
 }
 
@@ -568,11 +619,11 @@ footer .footer-lower {
 .ueber-mich {
   height: 20vh;
   background-color: pink;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 12;
-  grid-area: 2 / 3 / 3 / 15;
+  grid-area: 3 / 3 / 4 / 15;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[8];
@@ -612,11 +663,11 @@ footer .footer-lower {
 
 .cta {
   height: 15vh;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 12;
-  grid-area: 3 / 3 / 4 / 15;
+  grid-area: 4 / 3 / 5 / 15;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
