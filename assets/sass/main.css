@@ -523,6 +523,31 @@ body {
   -webkit-tap-highlight-color: #727272;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6, .button {
+  font-family: 'Sintony', sans-serif;
+}
+
+h1 {
+  font-size: 4.63rem;
+}
+
+h2 {
+  font-size: 2.78rem;
+}
+
+h3, h4, h5, h6, nav {
+  font-size: 1.67rem;
+}
+
+.footer-lower {
+  font-size: 0.8rem;
+}
+
 .hero-main {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -569,7 +594,6 @@ body {
   -ms-grid-column-span: 2;
   grid-area: 2 / 2 / 3 / 4;
   color: white;
-  font-size: 3rem;
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
 }
@@ -579,12 +603,12 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 8vh 15vh 2vh;
-      grid-template-rows: 8vh 15vh 2vh;
+  -ms-grid-rows: 8vh 19vh 3vh;
+      grid-template-rows: 8vh 19vh 3vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25vh;
+  height: 30vh;
   background-color: pink;
 }
 
@@ -595,6 +619,7 @@ footer .footer-nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 1 / 1 / 2 / 4;
+  height: 100%;
 }
 
 footer .footer-nav ul li {
@@ -642,7 +667,7 @@ footer .footer-lower {
 }
 
 .ueber-mich {
-  height: 20vh;
+  height: 25vh;
   background-color: orange;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
