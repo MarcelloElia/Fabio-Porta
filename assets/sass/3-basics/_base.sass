@@ -1,6 +1,8 @@
 html
-    box-sizing: border-box
     background: white
+
+.fix-body
+    position: fixed
 
 main
     display: grid
@@ -13,8 +15,11 @@ main
 section:nth-of-type(even)
     margin: 2rem 0px
 
-section:first-child
+section:nth-of-type(odd)
     margin-top: -1rem
+
+section:first-child
+    margin: 0rem
 
 .c-t 
     text-align: center
@@ -30,3 +35,5 @@ hr.hr-bottom
     border: 2px solid $tertiary
     z-index: 99
     transform: translateY(-2px)
+
+

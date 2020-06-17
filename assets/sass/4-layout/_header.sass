@@ -1,0 +1,39 @@
+header
+    background-color: $primary
+    nav
+        display: flex
+        justify-content: space-around
+        align-items: center
+        height: 8vh
+        .nav-links
+            display: flex
+            justify-content: space-between
+            width: 30%
+            @include transition30
+        .burger
+            display: none
+            cursor: pointer
+            div
+                height: 3px
+                width: 25px
+                background-color: $secondary
+                margin: 5px
+                @include transition15
+
+.rotate .line1
+    transform: rotate(-45deg) translate(-5px,6px)
+
+.rotate .line2
+    opacity: 0
+
+.rotate .line3
+    transform: rotate(+45deg) translate(-5px,-6px)
+
+@keyframes navLinkFade
+    from
+        opacity: 0
+        transform: translateX(50px)
+    to
+        opacity: 1
+        transform: translateX(0px)
+
