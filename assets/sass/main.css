@@ -375,10 +375,6 @@ html, body {
   position: fixed;
 }
 
-.fix-body2 {
-  overflow: hidden;
-}
-
 main {
   display: -ms-grid;
   display: grid;
@@ -903,14 +899,12 @@ footer .footer-lower a {
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    height: 100%;
-  }
   header nav .nav-links {
     position: fixed;
     right: 0px;
     top: 8vh;
     height: 92vh;
+    padding-bottom: 2rem;
     background-color: #63ACE5;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -928,6 +922,8 @@ footer .footer-lower a {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     z-index: 99;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   header nav .nav-links li {
     opacity: 0;
