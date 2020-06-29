@@ -899,11 +899,14 @@ footer .footer-lower a {
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    height: 100%;
+  }
   header nav .nav-links {
     position: fixed;
     right: 0px;
     top: 8vh;
-    height: 50vh;
+    height: 92vh;
     background-color: #63ACE5;
     display: -webkit-box;
     display: -ms-flexbox;
