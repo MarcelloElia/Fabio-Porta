@@ -367,6 +367,10 @@ table {
   border-spacing: 0;
 }
 
+html, body {
+  background: white;
+}
+
 .fix-body {
   position: fixed;
 }
@@ -378,7 +382,6 @@ main {
       grid-template-rows: repeat(autofill, 1fr);
   -ms-grid-columns: (1fr)[16];
       grid-template-columns: repeat(16, 1fr);
-  padding: 1rem;
 }
 
 * *:before *:after {
