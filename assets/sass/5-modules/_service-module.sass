@@ -1,0 +1,39 @@
+.service-module
+    grid-area: 2 / 3 / 3 / 16
+
+.service-module2
+    grid-area: 3 / 3 / 4 / 16
+
+.service-module3
+    grid-area: 4 / 3 / 5 / 16
+
+.service-grid
+    max-height: 50vh
+    display: grid
+    grid-template-columns: repeat(16, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+    .service-img
+        grid-area: 1 / 1 / end / 5
+    .service-headline
+        grid-area: 2 / 4 / 3 / 7
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        padding: 0.5rem 2rem
+        background-color: $primary
+        place-self: center center
+        color: white
+    .service-textbox
+        grid-area: 3 / 6 / 4 / 13
+        padding: 2rem 0rem
+    .button
+        grid-area: 4 / 14 / 5 / 15
+    .button-alt
+        background-color: $tertiary
+        border: none
+
+
+.service-img img
+    width: 100%
+    height: 100%
+    object-fit: cover
