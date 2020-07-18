@@ -1,0 +1,18 @@
+.person
+    grid-area: 2 / 3 / 3 / 15
+    height: 60vh
+    .person-grid
+        display: grid
+        grid-template-columns: repeat(16, 1fr)
+        grid-template-rows: repeat(10, 1fr)
+        img
+            grid-area: 1 / 1 / end / 8
+            max-width: 100%
+            max-height: 100%
+            object-fit: cover
+        .name
+            grid-area: 3 / 8 / 4 / end
+        .work-title
+            grid-area: 4 / 10 / 5 / end
+        .person-description
+            grid-area: 5 / 9 / 6 / end

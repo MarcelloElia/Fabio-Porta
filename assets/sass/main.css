@@ -980,6 +980,52 @@ footer .footer-lower a {
      object-fit: cover;
 }
 
+.person {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 12;
+  grid-area: 2 / 3 / 3 / 15;
+  height: 60vh;
+}
+
+.person .person-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+}
+
+.person .person-grid img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: 1 / 1 / end / 8;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.person .person-grid .name {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-area: 3 / 8 / 4 / end;
+}
+
+.person .person-grid .work-title {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-area: 4 / 10 / 5 / end;
+}
+
+.person .person-grid .person-description {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-area: 5 / 9 / 6 / end;
+}
+
 @media screen and (max-width: 1024px) {
   header nav .nav-links {
     width: 45%;
