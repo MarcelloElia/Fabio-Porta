@@ -46,6 +46,20 @@
         height: 100%
         object-fit: cover
 
+    .person
+        .person-grid
+            .person-name-grid
+                grid-template-columns: repeat(1, 1fr)
+                grid-template-rows: repeat(3, 1fr)
+                text-align: center
+                .name
+                    grid-area: 1 / 1 / 2 / end
+                .work-title
+                    grid-area: 2 / 1 / 3 / end
+                .person-description
+                    grid-area: 3 / 1 / end / end
+
+
 @media screen and (max-width:768px)
     header
         nav
@@ -149,6 +163,23 @@
         height: 50%
         object-fit: cover
     
+    .person
+        .person-grid
+            min-height: 80vh
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            justify-items: center
+            align-items: center
+            padding: 1rem
+            img
+                max-width: 90%
+                max-height: 90%
+            .person-name-grid
+                display: block
+
+
+    
     footer
         grid-template-rows: 12vh 10vh 15vh
         .headline-text-footer1
@@ -161,3 +192,6 @@
 @media screen and (max-width:400px)
     .service-grid
         max-height: 100vh
+    .person
+        .person-grid
+            min-height: 100vh
