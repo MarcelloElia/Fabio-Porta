@@ -987,10 +987,10 @@ footer .footer-lower a {
   -ms-grid-column-span: 12;
   grid-area: 2 / 3 / 3 / 15;
   padding: 1rem 0rem;
+  min-height: 50vh;
 }
 
 .person .person-grid {
-  height: 60vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -1004,8 +1004,7 @@ footer .footer-lower a {
 }
 
 .person .person-grid img {
-  max-width: 100%;
-  max-height: 100%;
+  max-height: 50vh;
   padding: 0rem 1rem;
 }
 
@@ -1040,6 +1039,16 @@ footer .footer-lower a {
 
 .person .person-grid .person-name-grid .person-description {
   grid-area: 3 / 2 / end / end;
+}
+
+.kunden {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 12;
+  grid-area: 3 / 3 / 4 / 15;
+  min-height: 15vh;
+  background-color: yellow;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1114,6 +1123,12 @@ footer .footer-lower a {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .person {
+    min-height: 60vh;
+  }
+  .person .person-grid img {
+    max-height: 60vh;
   }
   .person .person-grid .person-name-grid {
     -ms-grid-columns: (1fr)[1];
@@ -1308,8 +1323,10 @@ footer .footer-lower a {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .person {
+    min-height: 50vh;
+  }
   .person .person-grid {
-    min-height: 80vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[1];
@@ -1323,8 +1340,7 @@ footer .footer-lower a {
     padding: 1rem;
   }
   .person .person-grid img {
-    max-width: 90%;
-    max-height: 90%;
+    max-height: 50vh;
   }
   .person .person-grid .person-name-grid {
     display: block;

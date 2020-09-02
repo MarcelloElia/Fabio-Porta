@@ -47,7 +47,10 @@
         object-fit: cover
 
     .person
+        min-height: 60vh
         .person-grid
+            img
+                max-height: 60vh
             .person-name-grid
                 grid-template-columns: repeat(1, 1fr)
                 grid-template-rows: repeat(3, 1fr)
@@ -164,8 +167,8 @@
         object-fit: cover
     
     .person
+        min-height: 50vh
         .person-grid
-            min-height: 80vh
             display: grid
             grid-template-columns: repeat(1, 1fr)
             grid-template-rows: repeat(2, 1fr)
@@ -173,8 +176,7 @@
             align-items: center
             padding: 1rem
             img
-                max-width: 90%
-                max-height: 90%
+                max-height: 50vh
             .person-name-grid
                 display: block
 
