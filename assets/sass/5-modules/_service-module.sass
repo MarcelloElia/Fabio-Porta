@@ -3,9 +3,21 @@
 
 .service-module2
     grid-area: 3 / 3 / 4 / 16
+    position: relative
 
 .service-module3
     grid-area: 4 / 3 / 5 / 16
+
+.spacer:nth-of-type(odd)::before
+    content: ''
+    position: absolute
+    height: 101%
+    width: 40%
+    border-top: 2px solid $tertiary
+    border-bottom: 2px solid $tertiary
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 
 .service-grid
     max-height: 50vh

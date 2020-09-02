@@ -14,14 +14,11 @@ hr
     width: 100vw
     background-color: pink
 
-* *:before *:after
-    box-sizing: inherit
+*, *::before, *::after
+    box-sizing: border-box
 
 section:nth-of-type(even)
     margin: 2rem 0px
-
-section:nth-of-type(odd)
-    margin-top: -1rem
 
 section:first-child
     margin: 0rem
