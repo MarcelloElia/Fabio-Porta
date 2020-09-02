@@ -1,4 +1,35 @@
 .kunden
-    grid-area: 3 / 3 / 4 / 15
-    min-height: 15vh
-    background-color: yellow
+    grid-area: 3 / 1 / 4 / end
+    display: grid
+    grid-template-rows: repeat(autofill, 1fr)
+    grid-template-columns: repeat(16, 1fr)
+    min-height: 40vh
+    background-color: $secondary
+    align-items: center
+    justify-items: center
+    position: relative
+    .kunden-h
+        grid-area: 1 / 3 / 2 / 15
+    .kunden-s
+        grid-area: 2 / 3 / 3 / 15
+    .kunden-logo
+        grid-area: 3 / 3 / 4 / 15
+        display: flex
+        .kunden-logo-img
+            background-image: url('../../content/images/bild1.png')
+            height: 5rem
+            width: 5rem
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+
+.kunden::before
+    content: ''
+    position: absolute
+    border-top: 3px solid $tertiary
+    border-bottom: 3px solid $tertiary
+    height: 100%
+    width: 40%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
