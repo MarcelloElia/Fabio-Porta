@@ -61,6 +61,13 @@
                     grid-area: 2 / 1 / 3 / end
                 .person-description
                     grid-area: 3 / 1 / end / end
+    
+    .kunden
+        min-height: 40vh
+        .kunden-logo
+            .kunden-logo-img
+                height: 10rem
+                width: 10rem
 
 
 @media screen and (max-width:768px)
@@ -183,6 +190,17 @@
             .person-name-grid
                 display: block
 
+    .kunden
+        grid-template-rows: 10% 5% 85%
+        min-height: 150vh
+        .kunden-s
+            text-align: center
+        .kunden-logo
+            flex-wrap: wrap
+            .kunden-logo-img
+                height: 13rem
+                width: 13rem
+
 
     
     footer
@@ -200,3 +218,12 @@
     .person
         .person-grid
             min-height: 100vh
+    
+    .kunden
+        min-height: 130vh
+        .kunden-h
+            text-align: center
+        .kunden-logo
+            .kunden-logo-img
+                height: 10rem
+                width: 10rem

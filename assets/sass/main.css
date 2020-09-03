@@ -1071,11 +1071,11 @@ footer .footer-lower a {
   grid-area: 3 / 1 / 4 / end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[autofill];
-      grid-template-rows: repeat(autofill, 1fr);
+  -ms-grid-rows: 20% 2% 78%;
+      grid-template-rows: 20% 2% 78%;
   -ms-grid-columns: (1fr)[16];
       grid-template-columns: repeat(16, 1fr);
-  min-height: 40vh;
+  min-height: 45vh;
   background-color: #fafcff;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1109,15 +1109,24 @@ footer .footer-lower a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .kunden .kunden-logo .kunden-logo-img {
   background-image: url("../../content/images/bild1.png");
-  height: 5rem;
-  width: 5rem;
+  height: 12rem;
+  width: 12rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .kunden::before {
@@ -1231,6 +1240,13 @@ footer .footer-lower a {
   }
   .person .person-grid .person-name-grid .person-description {
     grid-area: 3 / 1 / end / end;
+  }
+  .kunden {
+    min-height: 40vh;
+  }
+  .kunden .kunden-logo .kunden-logo-img {
+    height: 10rem;
+    width: 10rem;
   }
 }
 
@@ -1430,6 +1446,22 @@ footer .footer-lower a {
   .person .person-grid .person-name-grid {
     display: block;
   }
+  .kunden {
+    -ms-grid-rows: 10% 5% 85%;
+        grid-template-rows: 10% 5% 85%;
+    min-height: 150vh;
+  }
+  .kunden .kunden-s {
+    text-align: center;
+  }
+  .kunden .kunden-logo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .kunden .kunden-logo .kunden-logo-img {
+    height: 13rem;
+    width: 13rem;
+  }
   footer {
     -ms-grid-rows: 12vh 10vh 15vh;
         grid-template-rows: 12vh 10vh 15vh;
@@ -1457,6 +1489,16 @@ footer .footer-lower a {
   }
   .person .person-grid {
     min-height: 100vh;
+  }
+  .kunden {
+    min-height: 130vh;
+  }
+  .kunden .kunden-h {
+    text-align: center;
+  }
+  .kunden .kunden-logo .kunden-logo-img {
+    height: 10rem;
+    width: 10rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
