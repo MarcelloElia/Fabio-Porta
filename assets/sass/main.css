@@ -847,6 +847,61 @@ footer .footer-lower a {
   place-self: center end;
 }
 
+.kontakt-text {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-area: 2 / 3 / 3 / 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 50vh;
+  position: relative;
+  padding: 1rem;
+}
+
+.kontakt-text::before {
+  content: '';
+  position: absolute;
+  border-right: 2px solid #E7EFF6;
+  height: 60%;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.kontaktformular {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 6;
+  grid-area: 2 / 9 / 3 / 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  min-height: 50vh;
+  padding: 1rem;
+}
+
+.kontaktformular h3, .kontaktformular h4 {
+  padding: 1rem;
+}
+
 .picture-text-module {
   height: 76vh;
   display: -ms-grid;
@@ -1468,6 +1523,37 @@ footer .footer-lower a {
   .kunden .kunden-logo .kunden-logo-img {
     height: 13rem;
     width: 13rem;
+  }
+  .kontakt-text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 12;
+    grid-area: 2 / 3 / 3 / 15;
+    min-height: 25vh;
+    text-align: center;
+    padding-bottom: 0rem;
+  }
+  .kontakt-text::before {
+    display: none;
+  }
+  .kontaktformular {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 12;
+    grid-area: 3 / 3 / 4 / 15;
+    min-height: 25vh;
+    padding-bottom: 3rem;
+  }
+  .kontaktformular h3 {
+    padding-top: 3rem;
+  }
+  .kontaktformular::before {
+    content: '';
+    position: relative;
+    border-top: 3px solid #E7EFF6;
+    border-radius: 2px;
   }
   footer {
     -ms-grid-rows: 12vh 10vh 15vh;

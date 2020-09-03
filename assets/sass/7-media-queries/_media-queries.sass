@@ -200,6 +200,29 @@
             .kunden-logo-img
                 height: 13rem
                 width: 13rem
+    
+    .kontakt-text
+        grid-area: 2 / 3 / 3 / 15
+        min-height: 25vh
+        text-align: center
+        padding-bottom: 0rem
+
+    .kontakt-text::before
+        display: none
+
+    .kontaktformular
+        grid-area: 3 / 3 / 4 / 15
+        min-height: 25vh
+        padding-bottom: 3rem
+        h3
+            padding-top: 3rem
+    
+    .kontaktformular::before
+        content: ''
+        position: relative
+        border-top: 3px solid $tertiary
+        border-radius: $small
+
 
 
     
